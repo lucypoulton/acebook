@@ -99,3 +99,6 @@ If you have issues that are not resolved by these tips, please reach out to a co
 - Take 1 hour lunch whenever
 - Finish at 4 for daily retro
 - Work until 5:30 independently
+
+
+AAAAAAAA

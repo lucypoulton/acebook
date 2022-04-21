@@ -2,6 +2,7 @@
 <ul class="posts">
     {{#each posts}}
         <li class="post">
+                 <img class="profile-pic" src="/users/photo/{{user._id}}"  alt="profile picture"/>
                <h6>{{this.author.firstName}} {{this.author.lastName}}</h6>
             <div>{{this.message}}</div>
             <form action="/posts/like" method="post">

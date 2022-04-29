@@ -265,6 +265,7 @@ nav .hoverable:hover:after {
 
 .timeline ul {
   display: inline-grid;
+  max-width: 40em;
 }
 
 .timeline li {

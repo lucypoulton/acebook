@@ -359,3 +359,7 @@ textarea {
 .error-viewer > * {
   margin: 1em;
 }
+
+.error-viewer img {
+  max-width: 40em;
+}

@@ -12,11 +12,10 @@
 {{!-- NAV BAR --}}
 <section class="header">
     <nav class="nav-bar" id="navLinks">
-        {{#if user}}
-            <a class="navbar-logo" title="Timeline" href="/posts"><img src="/images/acebook-logo.png" alt="logo"></a>
-        {{/if}}
 
         {{#if user}}
+            <a class="navbar-logo" title="Timeline" href="/posts"><img src="/images/acebook-logo.png" alt="logo"></a>
+            <a href="/super-secret">&nbsp;</a>
             <a class="hoverable" href="/posts/new"><i class="fa-regular fa-pen-to-square"></i></a>
             <a class="hoverable" href="/posts">TIMELINE</a>
             <a class="hoverable" href="/users/all">FIND A PROFILE</a>
@@ -30,6 +29,7 @@
                  onclick="window.location.href='/users/profile'">
         {{else}}
             <span class="navbar-logo"> </span>
+            <a href="/super-secret">&nbsp;</a>
             <a class="hoverable" href="/sessions/new">LOGIN</a>
             <a class="hoverable" href="/users/new">SIGN UP</a>
         {{/if}}

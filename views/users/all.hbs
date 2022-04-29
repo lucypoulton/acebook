@@ -2,7 +2,7 @@
 <div class="all-users">
     {{#each users}}
         <div>
-            <img class="profile-pic"  src="{{dataImg this.img}}" alt="photo"/>
+            <img class="profile-pic"  src="{{dataImage this.img}}" alt="photo"/>
             <div>
                 <a href="/users/profile/{{this._id}}">{{this.firstName}} {{this.lastName}}</a>
                 {{#if @root.user}}

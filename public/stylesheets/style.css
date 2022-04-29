@@ -63,7 +63,7 @@ nav > * {
 
 nav .hoverable:after {
   content: "";
-  width: 0px;
+  width: 0;
   height: 1px;
   display: block;
   background: var(--yellow);
@@ -165,6 +165,7 @@ nav .hoverable:hover:after {
 
 .all-users {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
 
@@ -264,6 +265,7 @@ nav .hoverable:hover:after {
 
 .timeline ul {
   display: inline-grid;
+  max-width: 40em;
 }
 
 .timeline li {
@@ -307,6 +309,8 @@ button:hover, input[type=submit]:not(.button):hover {
 .profile-container > .profile-pic {
   border: solid var(--accent) 3px;
   border-radius: 15px;
+  max-height: 15em;
+  max-width: 60em;
 }
 
 

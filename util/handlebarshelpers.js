@@ -28,7 +28,7 @@ data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIH
 `
 
 hbs.registerHelper("dataImage", (img) => img?.data ?
-    `data:${img?.contentType ?? ''};base64,${img?.data?.toString('base64')}` :
+    `data:${img?.contentType ?? ''};base64,${Buffer.from(img.data).toString('base64')}` :
     DEFAULT_IMAGE);
 
 hbs.registerHelper("strEq", function (one, two, options) {

@@ -1,6 +1,6 @@
 <div class="profile-container">
     <h1 id="title" class="title">{{targetUser.firstName}} {{targetUser.lastName}}</h1>
-    <img class="profile-pic" src="/users/photo/{{targetUser._id}}" alt="profile picture"/>
+    <img class="profile-pic" src="{{dataImage targetUser.img}}" alt="profile picture"/>
     {{#strEq @root.user._id targetUser._id}}
         <button onclick="window.location.href = '/users/profile/edit'">Edit Profile</button>
     {{else}}

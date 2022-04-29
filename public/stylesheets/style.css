@@ -63,7 +63,7 @@ nav > * {
 
 nav .hoverable:after {
   content: "";
-  width: 0px;
+  width: 0;
   height: 1px;
   display: block;
   background: var(--yellow);
@@ -308,6 +308,8 @@ button:hover, input[type=submit]:not(.button):hover {
 .profile-container > .profile-pic {
   border: solid var(--accent) 3px;
   border-radius: 15px;
+  max-height: 15em;
+  max-width: 60em;
 }
 
 

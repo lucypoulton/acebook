@@ -34,7 +34,7 @@ app.use(
       resave: false,
       saveUninitialized: false,
       cookie: {
-        expires: 600000,
+        maxAge: 1.08e+7,
       },
       store: MongoStore.create({
         clientPromise: mongoConnector.connection.then(m => m.connection.getClient())
